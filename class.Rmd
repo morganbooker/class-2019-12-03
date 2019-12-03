@@ -1,0 +1,31 @@
+---
+title: "class"
+author: "Morgan Booker"
+date: "12/3/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(memer)
+library(tidyverse)
+```
+
+```{r}
+meme_list()
+meme_get("Spongebob") %>% 
+  meme_text_top("DiD yOu PuT yOuR pArTnEr'S\nnAmE iN tHe ShEeT?")
+```
+
+```{r}
+meme_get("HotlineDrake")
+```
+
+```{r}
+meme_get("DistractedBf") %>% 
+  meme_text_distbf("Did you read\nthe syllabus?",
+                   "PRECEPTOR",
+                   "Answering\nstudent\nquestions",
+                   size = 25)
+```
+
